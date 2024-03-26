@@ -1,0 +1,4 @@
+/.pio
+
+# I have .vscode in my global .gitignore
+!/.vscode

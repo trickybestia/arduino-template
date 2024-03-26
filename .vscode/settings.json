@@ -1,0 +1,7 @@
+{
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/.pio/build/atmega328",
+        "--header-insertion=never",
+        "--clang-tidy"
+    ]
+}

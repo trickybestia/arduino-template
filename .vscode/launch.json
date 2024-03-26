@@ -1,0 +1,27 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "by-gdb",
+            "request": "launch",
+            "name": "Debug /dev/ttyUSB0",
+            "debuggerPath": "${userHome}/.platformio/packages/toolchain-atmelavr/bin/avr-gdb",
+            "debuggerArgs": [
+                "-b",
+                "115200"
+            ],
+            "program": "${workspaceFolder}/.pio/build/atmega328/firmware.elf",
+            "cwd": "${workspaceFolder}",
+            "remote": {
+                "enabled": true,
+                "address": "/dev/ttyUSB0",
+                "mode": "remote",
+                "execfile": "${workspaceFolder}/.pio/build/atmega328/firmware.elf"
+            },
+            "preLaunchTask": "Upload"
+        }
+    ]
+}
